@@ -40,8 +40,8 @@ $('#create-recipe-button').click(function(event) {
     let step = $('#step-add').val()
     let ingredient = $('#ingredient-add').val()
 
-    // createRecipe(name, description, step, ingredient)
-    createRecipe('Test', 'description ini mungkin sangat panjang', '1. do something 2. do something', '1. tomat 2. i dont know')
+    createRecipe(name, description, step, ingredient)
+    // createRecipe('Test', 'description ini mungkin sangat panjang', '1. do something 2. do something', '1. tomat 2. i dont know')
 })
 
 $('#update-recipe-button').click(function(event) {
