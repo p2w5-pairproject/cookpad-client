@@ -16,7 +16,7 @@
     <button id="logout-button">LOGOUT</button>
     <div class="recipe">
         <button id="read-all-recipe">READ ALL</button>
-        <button id="create-recipe-button">CREATE</button>
+        <!-- <button id="create-recipe-button">CREATE</button> -->
         <button id="update-recipe-button">UPDATE</button>
         <!-- <button id="delete-recipe-button">DELETE</button> -->
         <button id="search-recipe-button">SEARCH</button>
@@ -82,12 +82,12 @@
 
   <div id="form-recipe" class="container">
     <form>
-      <input type="text" class="form-control" id="title-add" aria-describedby="emailHelp">
-      <input type="textarea" class="form-control" id="description-add" aria-describedby="emailHelp">
-      <input type="textarea" class="form-control" id="ingredient-add" aria-describedby="emailHelp">
-      <input type="textarea" class="form-control" id="step-add" aria-describedby="emailHelp">
+      <input type="text" class="form-control" id="title-add" placeholder="Name" aria-describedby="emailHelp">
+      <input type="textarea" class="form-control" id="description-add" placeholder="Description" aria-describedby="emailHelp">
+      <input type="textarea" class="form-control" id="ingredient-add" placeholder="Ingredient" aria-describedby="emailHelp">
+      <input type="textarea" class="form-control" id="step-add" placeholder="Step" aria-describedby="emailHelp">
       
-      <button type="submit" class="btn btn-primary" id="">Submit</button>
+      <button type="submit" class="btn btn-primary" id="create-recipe-button">Submit</button>
     </form>
   </div>
     <div id="list-recipe-container">

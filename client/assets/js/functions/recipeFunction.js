@@ -18,6 +18,7 @@ const readRecipe = () => {
                         Selengkapnya
                     </button>
                     <button id="delete-recipe-button" onClick="deleteRecipe(${el.id})" >DELETE</button>
+                    <button id="update-recipe-button">UPDATE</button>
                     </div>
                 </div>
                 `)
@@ -48,6 +49,7 @@ const createRecipe = (name, description, step, ingredient) => {
     Ajax.createRecipe(name, description, step, ingredient)
         .done(response => {
             console.log(response);
+            auth()
         })
         .fail(err => {
             console.log(err);
