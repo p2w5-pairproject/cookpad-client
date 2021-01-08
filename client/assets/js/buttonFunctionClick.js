@@ -4,14 +4,16 @@ $('#register-button').click(function(event) {
     let email = $('#email-register').val()
     let password = $('#password-register').val()
     let name = $('#name-register').val()
-    register(email, password, name)
+    // register(email, password, name)
+    register('han@gmail.com', '123456', 'Hani')
 })
 
 $('#login-button').click(function(event) {
     event.preventDefault()
     let email = $('#email-login').val()
     let password = $('#password-login').val()
-    login(email, password)
+    // login(email, password)
+    login('han@gmail.com', '123456')
 })
 
 $('#logout-button').click(function(event) {
@@ -22,7 +24,7 @@ $('#logout-button').click(function(event) {
 //recipe
 $('#search-recipe-button').click(function(event) { //getOneRecipe
     event.preventDefault()
-    readOneRecipe('10')
+    readOneRecipe('11')
 })
 
 $('#read-all-recipe').click(function(event) {
@@ -37,7 +39,8 @@ $('#create-recipe-button').click(function(event) {
     let step = $('#step-add').val()
     let ingredient = $('#ingredient-add').val()
 
-    createRecipe(name, description, step, ingredient)
+    // createRecipe(name, description, step, ingredient)
+    createRecipe('Test', 'description ini mungkin sangat panjang', '1. do something 2. do something', '1. tomat 2. i dont know')
 })
 
 $('#update-recipe-button').click(function(event) {
@@ -47,11 +50,13 @@ $('#update-recipe-button').click(function(event) {
     let description = $('#description-add').val()
     let step = $('#step-add').val()
     let ingredient = $('#ingredient-add').val()
-    updateRecipe(id, name, description, step, ingredient)
+    // updateRecipe(id, name, description, step, ingredient)
+    updateRecipe('11', 'Test edit', 'description ini mungkin sangat panjang', '1. do something 2. do something', '1. tomat 2. i dont know')
 })
 
 $('#delete-recipe-button').click(function(event) {
     event.preventDefault()
     let id = $('#id').val()
-    deleteRecipe(id)
+    // deleteRecipe(id)
+    deleteRecipe('10')
 })
