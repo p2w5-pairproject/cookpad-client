@@ -9,6 +9,13 @@ const afterLogin = () => {
     $('#logout-button').show()
     $('.recipe').show()
     readRecipe()
+
+    // $('#navbar').hide()
+    // $('#landing-page').hide()
+    $('#login-section').hide()
+    $('#register-section').hide()
+    // $('#logout-button').show()
+    // $('#logged').show()
 }
 
 const beforeLogin = () => {
@@ -16,4 +23,11 @@ const beforeLogin = () => {
     $('#register-button').show()
     $('#logout-button').hide()
     $('.recipe').hide()
+
+    // $('#navbar').show()
+    // $('#landing-page').show()
+    $('#login-section').show()
+    $('#register-section').show()
+    // $('#logout-button').hide()
+    // $('#logged').hide()
 }

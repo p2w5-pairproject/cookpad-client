@@ -1,19 +1,20 @@
 // button
 $('#register-button').click(function(event) {
     event.preventDefault()
+    console.log('OKKK');
     let email = $('#email-register').val()
     let password = $('#password-register').val()
     let name = $('#name-register').val()
-    // register(email, password, name)
-    register('han@gmail.com', '123456', 'Hani')
+    register(email, password, name)
+    // register('han@gmail.com', '123456', 'Hani')
 })
 
 $('#login-button').click(function(event) {
     event.preventDefault()
     let email = $('#email-login').val()
     let password = $('#password-login').val()
-    // login(email, password)
-    login('han@gmail.com', '123456')
+    login(email, password)
+    // login('han@gmail.com', '123456')
 })
 
 $('#logout-button').click(function(event) {
@@ -56,7 +57,8 @@ $('#update-recipe-button').click(function(event) {
 
 $('#delete-recipe-button').click(function(event) {
     event.preventDefault()
-    let id = $('#id').val()
+    let id = $('#list-recipe-id').val()
+    console.log(id,'<<<<<<<<<<');
     // deleteRecipe(id)
-    deleteRecipe('10')
+    // deleteRecipe('10')
 })
